@@ -1,0 +1,136 @@
+/**
+ * Your markdown-themeable-pdf custom styles
+ *
+ * The default file can be found in the folder ~/.atom/packages/markdown-themeable-pdf/templates
+ * The base css file can be found in the folder ~/.atom/packages/markdown-themeable-pdf/css
+ * The current highlight.js css file can be found in the folder ~/.atom/packages/markdown-themeable-pdf/node_modules/highlight.js/styles
+ */
+
+
+ html, body {
+  font-family: "Corpid", Courier;
+  font-size: 10px;
+  font-weight: lighter;
+  color: black;
+  width:
+}
+
+body {
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 0px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 18px;
+  page-break-before: always;
+}
+
+h1:first-of-type {
+  page-break-before: auto;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: 14px;
+}
+h4 {
+  font-size: 12px;
+}
+h5 {
+  font-size: 10px;
+}
+h6 {
+  font-size: 10px;
+}
+
+code {
+  background-color: #EAEAEA;
+  color: black;
+  font: 9px Consolas, "Liberation Mono", Menlo, "Courier New","Corpid", Courier, monospace;
+  font-weight: lighter;
+}
+
+pre {
+  page-break-inside: avoid;
+}
+
+pre code {
+  background-color: #EAEAEA;
+  padding: 8px;
+  border-radius: 0;
+}
+
+a, a:visited, a:active, a:hover, a[href]:after {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1.5px solid gray;
+}
+
+#pageHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#pageFooter {
+  border: 0px;
+}
+
+ul  {
+  margin-top: 0px;
+  padding-left: 15px;
+  list-style-type: square;
+}
+
+table > thead > tr > th {
+  text-align: left;
+  background-color: #EAEAEA;
+  border-bottom: 0px;
+}
+
+table > tbody > tr:nth-of-type(odd) {
+  background-color: #FFF;
+}
+
+.title {
+  margin-top: 4cm;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+table.firstpage {
+  margin-top: 3cm;
+  border: 0px solid white;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+table.firstpage > tbody > tr  > th,
+table.firstpage > tbody > tr  > td {
+  border: 0px solid white;
+  color: inherit;
+  font-weight: inherit;
+  background-color: inherit;
+  margin-left: 0;
+  padding-left: 0;
+}

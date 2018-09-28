@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include index/head %>
+</head>
+
+<body>
+    <%- include index/header %>
+    <% if(namespace === null) { %>
+            <%- include index/body %>
+        <% }else{ %>
+            <%- include index/newpath %>
+    <% } %>
+    <%- include index/footer %>
+    <%- include index/foot %>
+</body>
+
+</html>
