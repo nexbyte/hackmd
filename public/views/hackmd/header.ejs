@@ -71,8 +71,10 @@
                 <li role="presentation"><a role="menuitem" class="ui-download-raw-html" tabindex="-1" href="#" target="_self"><i class="fa fa-file-code-o fa-fw"></i> <%= __('Raw HTML') %></a>
                 </li>
                 <li class="divider"></li>
-                <% if(typeof allowpdfexport !== 'undefined' && allowpdfexport) {%>
-                  <li role="presentation"><a role="menuitem" class="ui-download-pdf-beta" tabindex="-1" href="#" target="_self"><i class="fa fa-file-pdf-o fa-fw"></i> PDF (NextEvent)</a>
+                <% if(typeof allowpdfexport !== 'undefined' && allowpdfexport) { %>
+                  <li role="presentation"><a role="menuitem" class="ui-download-pdf-NextEvent" tabindex="-1" href="#" target="_self"><i class="fa fa-file-pdf-o fa-fw"></i> PDF (NextEvent)</a>
+                  </li>
+                  <li role="presentation"><a role="menuitem" class="ui-download-pdf-nexbyte" tabindex="-1" href="#" target="_self"><i class="fa fa-file-pdf-o fa-fw"></i> PDF (nexbyte)</a>
                   </li>
                 <% } %>
                 <li class="divider"></li>
@@ -173,8 +175,10 @@
                     <li role="presentation"><a role="menuitem" class="ui-download-raw-html" tabindex="-1" href="#" target="_self"><i class="fa fa-file-code-o fa-fw"></i> <%= __('Raw HTML') %></a>
                     </li>
                     <li class="divider"></li>
-                    <% if(typeof allowpdfexport !== 'undefined' && allowpdfexport) {%>
-                      <li role="presentation"><a role="menuitem" class="ui-download-pdf-beta" tabindex="-1" href="#" target="_self"><i class="fa fa-file-pdf-o fa-fw"></i> PDF (NextEvent)</a>
+                    <% if(typeof allowpdfexport !== 'undefined' && allowpdfexport) { %>
+                      <li role="presentation"><a role="menuitem" class="ui-download-pdf-NextEvent" tabindex="-1" href="#" target="_self"><i class="fa fa-file-pdf-o fa-fw"></i> PDF (NextEvent)</a>
+                      </li>
+                      <li role="presentation"><a role="menuitem" class="ui-download-pdf-nexbyte" tabindex="-1" href="#" target="_self"><i class="fa fa-file-pdf-o fa-fw"></i> PDF (nexbyte)</a>
                       </li>
                     <% } %>
                 </ul>
