@@ -1,26 +1,22 @@
 html, body {
-  font-family: "Open Sans", Courier;
-  font-size: 9px;
-  font-weight: lighter;
   color: black;
+  font-weight: lighter;
+  line-height: 1.4;
 }
 
 body {
-  margin-left: 19mm;
-  margin-right: 13mm;
+  margin-left: 2cm;
+  margin-right: 2cm;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans Semibold";
   border-bottom: 0px;
-  padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  padding: 0;
 }
 
 h1 {
-  font-size: 15px;
   page-break-before: always;
 }
 
@@ -29,21 +25,22 @@ h1:first-of-type {
 }
 
 h2 {
-  font-size: 13px;
   margin-top: 20px;
   margin-bottom: 8px;
-}
-h3 {
-  font-size: 12px;
-}
-h4 {
-  font-size: 11px;
 }
 h5 {
   font-size: 10px;
 }
 h6 {
   font-size: 10px;
+}
+
+h6[id^=tags] {
+  display: none;
+}
+
+img {
+  width: 100%;
 }
 
 code {
@@ -55,83 +52,39 @@ code {
 
 pre {
   page-break-inside: avoid;
+  white-space: pre-wrap;
 }
 
 pre code {
   background-color: #EAEAEA;
-  padding: 8px;
   border-radius: 0;
+  display: inherit;
+  padding: 8px;
 }
 
 a, a:visited, a:active, a:hover, a[href]:after {
+  border-bottom: 1.5px solid gray;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1.5px solid gray;
-}
-
-#pageHeader, #pageHeader-first {
-  position: absolute;
-  left: 9mm;
-  width: 100%;
-  height: 100%;
-}
-
-#pageFooter {
-  border: 0px;
-}
-
-img.header-NextEvent {
-  top: 2mm;
-  height: 3cm;
-  float: left;
-}
-
-img.header-nexbyte {
-  top: 0;
-  left: 0;
-  width: 21cm;
-  height: 1.794cm;
-  float: left;
-  margin-top: -2mm;
-  margin-left: -9mm;
 }
 
 ul  {
+  list-style-type: square;
   margin-top: 0px;
   padding-left: 15px;
-  list-style-type: square;
 }
 
 table > thead > tr > th {
-  text-align: left;
   background-color: #EAEAEA;
   border-bottom: 0px;
-  padding: 5px;
+  text-align: left;
 }
 
 table > tbody > tr:nth-of-type(odd) {
   background-color: #FFF;
 }
 
-table > tbody > tr > td {
-  padding: 5px;
-}
-
-.title {
-  margin-top: 4cm;
-  font-family: "Open Sans Semibold";
-  font-size: 26px;
-  /*color: #771316;*/
-}
-
-.subtitle {
-  font-size: 17px;
-  font-weight: normal;
-  /*color: #771316;*/
-}
-
 table.firstpage {
-  margin-top: 9cm;
   border: 0px solid white;
   margin-left: 0;
   padding-left: 0;
@@ -139,44 +92,33 @@ table.firstpage {
 
 table.firstpage > tbody > tr  > th,
 table.firstpage > tbody > tr  > td {
-  border: 0px solid white;
   color: inherit;
-  font-weight: inherit;
   background-color: inherit;
+  border: 0px solid white;
+  font-weight: inherit;
   margin-left: 0;
   padding-left: 0;
 }
 
-table.firstpage.header {
-  margin: 16mm 0 0 5cm;
-  border-spacing: 2cm 0;
+.title {
+  margin-top: 4cm;
 }
 
-table.firstpage.header > tbody > tr  > th,
-table.firstpage.header > tbody > tr  > td {
-  font-size: 8px;
-  margin: 0;
-  padding: 0;
+.subtitle {
+  font-weight: normal;
 }
 
-
-/* open-sans-regular - greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-regular.eot');
-  /* IE9 Compat Modes */
-  src: local('Open Sans'), local('OpenSans'), url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-regular.woff') format('woff'), /* Modern Browsers */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-regular.svg#OpenSans') format('svg');
-  /* Legacy iOS */
+#pageHeader, #pageHeader-first {
+  position: absolute;
+  left: 9mm;
+  height: 100%;
+  width: 100%;
 }
-/* open-sans-600 - greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese */
-@font-face {
-  font-family: 'Open Sans Semibold';
-  font-style: normal;
-  font-weight: 600;
-  src: url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-600.eot');
-  /* IE9 Compat Modes */
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-600.woff2') format('woff2'), /* Super Modern Browsers */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-600.woff') format('woff'), /* Modern Browsers */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-600.ttf') format('truetype'), /* Safari, Android, iOS */ url('http://dataserver.nexbyte.ch/web/nextevent/markdown-themeable-pdf/fonts/open-sans/open-sans-v13-greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese-600.svg#OpenSans') format('svg');
-  /* Legacy iOS */
+
+#pageContent {
+  width: 100%;
+}
+
+#pageFooter {
+  border: 0px;
 }
