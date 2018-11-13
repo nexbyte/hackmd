@@ -36,16 +36,23 @@ table {
 }
 
 table.firstpage {
-  margin-top: 3cm;
+  margin: 3cm 0 0 -0.5mm;
+}
+
+table.firstpage > tbody > tr > td:nth-child(2) {
+  padding: 8px 8px 8px 2.7cm;
 }
 
 .title {
-  /*font-weight: bold;*/
   font-size: 40px;
+  font-weight: bold;
+  margin-top: 3.92cm;
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 18.5px;
+  font-weight: 500;
+  margin-top: 0.5mm;
 }
 
 
