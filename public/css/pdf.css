@@ -21,7 +21,7 @@ h1 {
 }
 
 h1:first-of-type {
-  page-break-before: auto;
+  page-break-before: always;
 }
 
 h2 {
@@ -37,6 +37,10 @@ h6 {
 
 h6[id^=tags] {
   display: none;
+}
+
+div.page-break {
+  page-break-before: always;
 }
 
 img {
@@ -90,8 +94,8 @@ table.firstpage {
   padding-left: 0;
 }
 
-table.firstpage > tbody > tr  > th,
-table.firstpage > tbody > tr  > td {
+table.firstpage > tbody > tr > th,
+table.firstpage > tbody > tr > td {
   color: inherit;
   background-color: inherit;
   border: 0px solid white;
