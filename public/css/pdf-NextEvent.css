@@ -32,10 +32,7 @@ table {
   font-size: 9px;
 }
 
-table > thead > tr > th {
-  padding: 5px;
-}
-
+table > thead > tr > th,
 table > tbody > tr > td {
   padding: 5px;
 }
