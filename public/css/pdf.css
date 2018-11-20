@@ -21,7 +21,7 @@ h1 {
 }
 
 h1:first-of-type {
-  page-break-before: always;
+  page-break-before: auto;
 }
 
 h2 {
