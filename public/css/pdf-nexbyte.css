@@ -1,5 +1,5 @@
 html, body {
-  font-family: "Corpid", Courier;
+  font-family: 'Corpid', Courier;
   font-size: 10px;
   line-height: 1.4;
 }
@@ -32,15 +32,11 @@ img.header {
 }
 
 table {
-  font-size: 10px;
+  font-size: inherit;
 }
 
 table.firstpage {
   margin: 3cm 0 0 -0.5mm;
-}
-
-table.firstpage > tbody > tr > td:nth-child(2) {
-  padding: 8px 8px 8px 2.7cm;
 }
 
 .title {

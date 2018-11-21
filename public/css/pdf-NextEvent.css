@@ -1,10 +1,10 @@
 html, body {
-  font-family: "Open Sans", Courier;
+  font-family: 'Open Sans', Courier;
   font-size: 9px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans Semibold";
+  font-family: 'Open Sans Semibold';
 }
 
 h1 {
@@ -29,21 +29,22 @@ img.header {
 }
 
 table {
-  font-size: 9px;
+  font-size: inherit;
 }
 
-table > thead > tr > th,
-table > tbody > tr > td {
-  padding: 5px;
+table > thead > tr > th {
+  font-family: 'Open Sans Semibold';
 }
 
 table.firstpage {
   margin-top: 9cm;
+  white-space: nowrap;
+  width: 25%;
 }
 
 table.firstpage.header {
-  border-spacing: 1.65cm 0;
-  margin: 1.5cm 0 0 6.225cm;
+  margin: 1.5cm 0 0 7.82cm;
+  width: 49.25%;
 }
 
 table.firstpage.header > tbody > tr  > th,
@@ -54,7 +55,7 @@ table.firstpage.header > tbody > tr  > td {
 }
 
 .title {
-  font-family: "Open Sans Semibold";
+  font-family: 'Open Sans Semibold';
   font-size: 26px;
 }
 
