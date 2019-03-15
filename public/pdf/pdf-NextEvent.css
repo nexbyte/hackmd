@@ -1,0 +1,79 @@
+html, body {
+  font-family: 'Open Sans', Courier;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Semibold';
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 20px;
+}
+
+img.header {
+  height: 4.6cm;
+  float: left;
+  margin-left: 1.38cm;
+  width: auto;
+}
+
+table > thead > tr > th {
+  font-family: 'Open Sans Semibold';
+  font-weight: bold;
+}
+
+table.firstpage {
+  margin-top: 9cm;
+  white-space: nowrap;
+  width: 25%;
+}
+
+table.firstpage.header {
+  float: right;
+  margin: -2.4cm 0 0 7.82cm;
+  padding-left: 1.5cm;
+  width: 52%;
+}
+
+table.firstpage.header > tbody > tr  > th,
+table.firstpage.header > tbody > tr  > td {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: 'Open Sans Semibold';
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 27px;
+}
+
+/* open-sans-regular - greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: lighter;
+  src: url('./open-sans-v13-regular.ttf') format('truetype')
+}
+/* open-sans-600 - greek-ext_latin-ext_cyrillic_latin_greek_cyrillic-ext_vietnamese */
+@font-face {
+  font-family: 'Open Sans Semibold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./open-sans-v13-600.ttf') format('truetype')
+}

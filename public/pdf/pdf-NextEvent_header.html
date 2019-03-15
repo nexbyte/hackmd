@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./pdf-NextEvent.css" type="text/css"/>
+    <script>
+      function subst() {
+        var vars={};
+        var x = document.location.search.substring(1).split('&');
+        for (var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}
+        var x = ['frompage','topage','page','webpage','section','subsection','subsubsection'];
+        for (var i in x) {
+          var y = document.getElementsByClassName(x[i]);
+          for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+
+          if(vars['page'] != 1){ // If page is 1, set header display to none
+            document.getElementById("headerTable").style.display = 'none';
+          }
+        }
+      }
+    </script>
+  </head>
+  <body style="height: 5.25cm; width: 100%;" onload="subst()">
+    <div id="pageHeader">
+      <img class="header" src="./nextevent_logo_quer.png" alt="Logo" />
+      <table id="headerTable" class="firstpage header">
+        <tbody>
+        <tr>
+          <td>NextEvent AG</td><td>mail@nextevent.com</td>
+        </tr>
+        <tr>
+          <td>Bälliz 24</td><td>www.nextevent.com</td>
+        </tr>
+          <tr>
+        <td>CH-3600 Thun</td><td>+41 33 511 22 55</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
