@@ -22,9 +22,9 @@ h4 {
 }
 
 img.header {
-  height: 4.6cm;
+  height: 4.78cm;
   float: left;
-  margin-left: 1.38cm;
+  margin-left: 1.42cm;
   width: auto;
 }
 
@@ -41,15 +41,15 @@ table.firstpage {
 
 table.firstpage.header {
   float: right;
-  margin: -2.4cm 0 0 7.82cm;
-  padding-left: 1.5cm;
-  width: 52%;
+  margin: -2.4cm -1.38cm 0 15cm;
+  width: 14cm;
 }
 
 table.firstpage.header > tbody > tr  > th,
 table.firstpage.header > tbody > tr  > td {
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
+  line-height: 1.2;
   padding: 0;
 }
 
