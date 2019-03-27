@@ -82,8 +82,14 @@ ul  {
 
 table {
   border-collapse: collapse;
-  width: 100%;
   font-size: inherit;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+table thead {
+  display: table-header-group;
+  page-break-before: auto;
 }
 
 table > thead > tr > th,
@@ -103,6 +109,10 @@ table > thead > tr > th {
   page-break-before: auto;
 }
 
+table > tbody > tr > td {
+  font-weight: lighter;
+}
+
 table > tbody > tr:nth-of-type(odd) {
   background-color: #FFF;
   page-break-inside: avoid;
@@ -112,7 +122,9 @@ table > tbody > tr:nth-of-type(odd) {
 table.firstpage {
   border: 0px solid white;
   margin-left: 0;
+  line-height: 0.5;
   padding-left: 0;
+  white-space: nowrap;
 }
 
 table.firstpage > tbody > tr > th,
@@ -126,13 +138,8 @@ table.firstpage > tbody > tr > td {
   page-break-before: auto;
 }
 
-table thead {
-  display: table-header-group;
-  page-break-before: auto;
-}
-
 .title {
-  margin-top: 4cm;
+  padding-top: 5.4cm;
 }
 
 .subtitle {

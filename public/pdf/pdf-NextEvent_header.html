@@ -12,7 +12,7 @@
           var y = document.getElementsByClassName(x[i]);
           for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
 
-          if(vars['page'] != 1){ // If page is 1, set header display to none
+          if(vars['page'] != 1){ // If page isn't 1, set header display to none
             document.getElementById("headerTable").style.display = 'none';
           }
         }
@@ -22,7 +22,7 @@
   <body style="height: 5.95cm; width: 100%;" onload="subst()">
     <div id="pageHeader">
       <img class="header" src="./nextevent_logo_quer.png" alt="Logo" />
-      <table id="headerTable" class="firstpage header">
+      <table id="headerTable" class="header">
         <tbody>
         <tr>
           <td>NextEvent AG</td><td>mail@nextevent.com</td>
