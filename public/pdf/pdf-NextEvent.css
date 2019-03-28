@@ -25,6 +25,11 @@ img.header {
   width: auto;
 }
 
+table > tbody > tr  > th,
+table > tbody > tr  > td {
+  vertical-align: top;
+}
+
 table.firstpage {
   margin-top: 14.95cm;
   width: 17.5cm;
