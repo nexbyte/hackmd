@@ -26,7 +26,7 @@ h1:first-of-type {
 
 h2 {
   margin-top: 30px;
-  /*margin-bottom: 10px;*/
+  margin-bottom: 9px;
 }
 h5 {
   font-size: 20px;
@@ -43,8 +43,10 @@ div.page-break {
   page-break-before: always;
 }
 
-img {
-  width: 100%;
+a, a:visited, a:active, a:hover, a[href]:after {
+  border-bottom: 1.5px solid gray;
+  color: inherit;
+  text-decoration: none;
 }
 
 code {
@@ -53,6 +55,15 @@ code {
   font: 15px Consolas, 'Liberation Mono', Menlo, 'Courier New','Corpid', Courier, monospace;
   font-weight: lighter;
   padding: 2px;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  /*margin-block-start: 0.5em;*/
+  margin-top: 0;
 }
 
 pre {
@@ -68,16 +79,8 @@ pre code {
   padding: 8px;
 }
 
-a, a:visited, a:active, a:hover, a[href]:after {
-  border-bottom: 1.5px solid gray;
-  color: inherit;
-  text-decoration: none;
-}
-
-ul  {
-  list-style-type: square;
-  margin-top: 0px;
-  padding-left: 15px;
+strong{
+  font-weight: bold;
 }
 
 table {
@@ -136,6 +139,12 @@ table.firstpage > tbody > tr > td {
   padding-left: 0;
   page-break-inside: avoid;
   page-break-before: auto;
+}
+
+ul  {
+  list-style-type: square;
+  margin-top: 0;
+  padding-left: 15px;
 }
 
 .title {

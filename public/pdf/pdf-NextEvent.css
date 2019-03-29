@@ -6,16 +6,16 @@ html, body {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 25.5px;
 }
 h2 {
-  font-size: 22px;
+  font-size: 21.5px;
 }
 h3 {
-  font-size: 21px;
+  font-size: 20px;
 }
 h4 {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 img.header {
@@ -23,6 +23,14 @@ img.header {
   float: left;
   margin-left: 1.42cm;
   width: auto;
+}
+
+li {
+  line-height: 1.5;
+}
+
+ol {
+  padding-left: 33px;
 }
 
 table > tbody > tr  > th,
