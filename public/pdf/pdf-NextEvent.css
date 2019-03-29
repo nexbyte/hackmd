@@ -33,6 +33,10 @@ ol {
   padding-left: 33px;
 }
 
+ul li {
+  padding-left: 10px;
+}
+
 table > tbody > tr  > th,
 table > tbody > tr  > td {
   vertical-align: top;
