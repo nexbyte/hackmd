@@ -15,6 +15,10 @@
 
           if(vars['page'] != 1){ // If page isn't 1, set header display to none
             document.getElementById("headerTable").style.display = 'none';
+          } else {
+            var img = document.querySelector('img.header');
+            img.style.marginLeft = '1.5cm';
+            img.style.height = '5.025cm';
           }
         }
       }
